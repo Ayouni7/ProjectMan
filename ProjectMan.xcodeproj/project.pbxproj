@@ -256,6 +256,12 @@
 				DEVELOPMENT_TEAM = 5KGS8W2LZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Capture;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture photographs handwritten notes and whiteboards so they can be turned into tasks.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Capture records meetings so they can be transcribed and turned into action items.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Capture attaches photos of notes and documents to a capture for extraction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Capture transcribes recordings to extract decisions and tasks. On-device recognition is used when available.";
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,6 +272,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ayouni.ProjectMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -288,6 +295,12 @@
 				DEVELOPMENT_TEAM = 5KGS8W2LZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Capture;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture photographs handwritten notes and whiteboards so they can be turned into tasks.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Capture records meetings so they can be transcribed and turned into action items.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Capture attaches photos of notes and documents to a capture for extraction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Capture transcribes recordings to extract decisions and tasks. On-device recognition is used when available.";
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ayouni.ProjectMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

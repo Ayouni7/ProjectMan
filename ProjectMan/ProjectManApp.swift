@@ -1,17 +1,24 @@
-//
-//  ProjectManApp.swift
-//  ProjectMan
-//
-//  Created by Mohamad Alayouni on 8/17/26.
-//
-
+import SwiftData
 import SwiftUI
 
 @main
 struct ProjectManApp: App {
+    @State private var settings = AppSettings()
+    @State private var pipeline = ProcessingPipeline()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environment(settings)
+                .environment(pipeline)
         }
+        .modelContainer(for: [
+            Project.self,
+            CaptureItem.self,
+            TaskItem.self,
+            StatusChange.self,
+            Speaker.self,
+            KnownPerson.self
+        ])
     }
 }
